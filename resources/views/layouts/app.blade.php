@@ -33,7 +33,7 @@
         @yield('content')
         @include('inc.modal')
 
-        @include('inc.about')
+        @include('inc.aboutUs')
         @include('inc.isostandard')
         @include('inc.contact')
 

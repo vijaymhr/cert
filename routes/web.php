@@ -13,3 +13,7 @@
 
 Route::get('/', 'PagesController@index') ;
 
+Route::resource('dashboard', 'AdminController');
+Route::resource('about', 'AboutController');
+Route::resource('iso', 'IsoController');
+Route::resource('info', 'InfoController');

@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center"
+            <div class="align-self-stretch box p-4 text-center">
                 <div class="icon d-flex align-items-center justify-content-center">
                     <span class="icon-paper-plane"></span> 
                 </div>
@@ -64,7 +64,9 @@
         </div>
 
         <div class="col-md-6 d-flex">
-            <div id="map" class="bg-white"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.659873435088!2d172.6018943154938!3d-43.53028497912569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318af575e4a047%3A0x652e84023b1b4de4!2s85%20Picton%20Avenue%2C%20Riccarton%2C%20Christchurch%208011!5e0!3m2!1sen!2snz!4v1581982353310!5m2!1sen!2snz" width="600" height="750" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+       
         </div>
       </div>
     </div>
