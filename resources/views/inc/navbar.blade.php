@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">HASELDEN & CO NZ LTD</a>
+      <a class="navbar-brand" href="/">HASELDEN & CO NZ LTD</a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -12,7 +12,7 @@
           <li class="nav-item"><a href="#practice-section" class="nav-link"><span>ISO Standards
         </span></a></li>
           <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-          <li class="nav-item cta"><a href="#" class="nav-link" data-toggle="modal" data-target="#modalAppointment">Contact Us</a></li>
+          <li class="nav-item cta"><a href="#contact-form" class="nav-link"data-target="#modalAppointment">Contact Us</a></li>
         </ul>
       </div>
     </div>

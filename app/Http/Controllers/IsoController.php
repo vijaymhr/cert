@@ -35,25 +35,7 @@ class IsoController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,
-        [
-            'title1'=>'required',
-            'title2'=>'required',
-            'desc' => 'required'
-            // 'cover_image'=>'image | nullable | max:1999'
-        ]);
-
-
-        //create 
-        $iso=new Iso;
-        $iso->title1=$request->input('title1');
-        $iso->title2=$request->input('title2');
-        $iso->desc=$request->input('desc');
-        // $food->cover_image=$fileNameToStore;
-        // $food->user_id=auth()->user()->id;
-        $iso->save();
-
-        return redirect('/iso')->with('success', 'ISO Successfully Added');
+       //
 
     }
 
@@ -93,16 +75,26 @@ class IsoController extends Controller
     {
         $this->validate($request,
         [
-            'title1'=>'required',
-            'title2'=>'required',
-            'desc' => 'required'
+            'iso_9001'=>'required',
+            'iso_45001'=>'required',
+            'iso_14001_1' => 'required',
+            'iso_14001_2' => 'required',
+
+            'iso_14001_3' => 'required'
+
         ]);
 
          //update 
          $iso=Iso::find($id);
-         $iso->title1=$request->input('title1');
-         $iso->title2=$request->input('title2');
-         $iso->desc=$request->input('desc');
+
+         $iso->iso_9001=$request->input('iso_9001');
+         $iso->iso_45001=$request->input('iso_45001');
+         $iso->iso_14001_1=$request->input('iso_14001_1');
+         $iso->iso_14001_2=$request->input('iso_14001_2');
+         $iso->iso_14001_3=$request->input('iso_14001_3');
+ 
+         
+
          
  
          $iso->save();

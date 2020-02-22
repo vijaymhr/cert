@@ -41,79 +41,62 @@
                     </div>
                     @include('inc.messages')
 
-                    @if(count($isos) > 0 )
-                        @foreach ($isos as $iso)
+                 
 
 
-                    <div class="body">
-
-                        <div class="row">
-                            <div class="col-md-4 col sm-4">
-                                <img style ="width: 80%" height="50%" src="/storage/cover_images/{{$iso->cover_image}}">
-
-                            </div>
-                            <div class="col-md-8 col sm-8">
-
-                    <h3>
-                         {{$iso -> title1}}
-                    </h3>
-                    <small>{{$iso->title2}}</small>
-                    <br>
-                    <small>{!!$iso->desc!!}</small>
-                    <br>
+                         
+                        <div class="body">
+    
+                            <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">ISO 9001</th>
+                                        <th scope="col">ISO 45001</th>
+                                        <th scope="col">ISO 14001-EM</th>
+                                        <th scope="col">ISO 14001-BCP</th>
+                                        <th scope="col">ISO 14001-IRM</th>
 
 
-                    <small>Added on: {{$iso->created_at}}</small>
+
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach ($isos as $iso)
+                                            
+                                      <tr>
+                                      <td>{!!$iso->iso_9001!!}</td>
+                                        <td>{!!$iso->iso_45001!!}</td>
+                                         <td>{!!$iso->iso_14001_1!!}</td>
+                                         <td>{!!$iso->iso_14001_2!!}</td>
+                                         <td>{!!$iso->iso_14001_3!!}</td>
+
+                                      </tr>
+                                      @endforeach
+
+                                    </tbody>
+                                    <div class="col-md-4 col sm-4">
+
+                                        <a href="/iso/{{$iso->id}}/edit" class="btn btn-success waves-effect"> 
+                                            <i class="material-icons">mode_edit</i>
+                                            <span>Edit ISO</span>
+                                        </a>
+                                    
+                                    </div> 
+                                  </table>
+
+
+<br>
+          
+             
+                     
+            </div>
+
+
+
+                        {{-- @endforeach --}}
+
                         
-
-                            </div>
-
-
-                            <div class="col-md-4 col sm-4">
-
-                                <a href="/iso/{{$iso->id}}/edit" class="btn btn-success waves-effect"> 
-                                    <i class="material-icons">mode_edit</i>
-                                    <span>Edit ISO</span>
-                                </a>
-                            
-                            
-                            
-                            
-                                {!!Form::open(['action'=>['IsoController@destroy', $iso->id],'method'=>'POST', 'class'=>'pull-right'])!!}
-                            
-                            {{Form::hidden('_method', 'DELETE')}}
-                            {{Form::button('<i class="material-icons">delete_forever</i> <span>Delete ISO</span>', ['type'=>'submit','class'=>'btn btn-warning waves-effect', 'onclick'=>'return validateForm(this)'])}}
-                            
-                            {!! Form::close() !!}
-                            
-                            <script>
-                                       
-                            
-                                         function validateForm() {
-                                           
-                                            if ( confirm("Are you sure you wish to delete?") == false ) {
-                                                return false ;
-                                            } else {
-                                                return true ;
-                                            } 
-                                               }
-                            
-                                   </script>
-                            </div>
-
-
-
-
-                    </div>
-                    </div>
-                        @endforeach
-
-                        <div class="header">{{$isos->links()}}</div>
-                    @else
-
-                        <p> Nothing is here. Try adding Something.</p>
-                    @endif
-                    
                 </div>
             </div>
         </div>

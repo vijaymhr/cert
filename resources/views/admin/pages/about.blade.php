@@ -34,11 +34,7 @@
                     <div class="body">
 
                         <div class="row">
-                            <div class="col-md-4 col sm-4">
-                                <img style ="width: 80%" height="50%" src="/storage/aboutUs/{{$about->aboutImage}}">
-
-                            </div>
-                            
+                              
                             
                             <div class="col-md-8 col sm-8">
                     
@@ -72,11 +68,7 @@
                     <br>
                    <br>
                    <br>
-                   
-                            </div>
-
-
-<div class="col-md-4 col sm-4">
+                    <div class="col-md-4 col sm-4">
 
                                 <a href="/about/{{$about->id}}/edit" class="btn btn-success waves-effect"> 
                                     <i class="material-icons">mode_edit</i>
@@ -86,6 +78,10 @@
 
 
                             </div>
+                            </div>
+
+
+                           
                     </div>
                     
                     </div>

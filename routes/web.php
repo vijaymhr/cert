@@ -17,3 +17,9 @@ Route::resource('dashboard', 'AdminController');
 Route::resource('about', 'AboutController');
 Route::resource('iso', 'IsoController');
 Route::resource('info', 'InfoController');
+Route::resource('/inc/contact', 'FeedbackController');
+Route::resource('feedback', 'FeedbackAdminController');
+
+
+
+Route::get('/contact', 'PagesController@contact');

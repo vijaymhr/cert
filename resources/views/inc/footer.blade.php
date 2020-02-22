@@ -11,10 +11,10 @@
           <div class="ftco-footer-widget mb-4 ml-md-4">
             <h2 class="ftco-heading-2">Links</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ISO standarts</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+              <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+              <li><a href="#practice-section"><span class="icon-long-arrow-right mr-2"></span>ISO standarts</a></li>
+              <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
             </ul>
           </div>
         </div>
@@ -22,9 +22,12 @@
            <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Practice Areas</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ISO 9001</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ISO 14001</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ISO 45001</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter1"><span class="icon-long-arrow-right mr-2"></span>ISO 9001</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter2"><span class="icon-long-arrow-right mr-2"></span>ISO 14001</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter3"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-EM</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter4"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-BCP</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter5"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-IRM</a></li>
+
         
             </ul>
           </div>
@@ -33,11 +36,16 @@
           <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Have a Questions?</h2>
               <div class="block-23 mb-0">
+                @foreach ($infos as $info)
+
                 <ul>
-                  <li><a href="#"></a><span class="icon icon-map-marker"></span><span class="text">85 Picton Ave, Riccarton, Christchurch 8011</span></li>
-                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+64212654593</span></a></li>
-                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@haselden.co.nz </span></a></li>
+                  <li><a href="https://www.google.com/maps/place/Picton+Avenue,+Riccarton,+Christchurch+8011/@-43.533375,172.6027532,17z/data=!3m1!4b1!4m5!3m4!1s0x6d318a8aa77e3acf:0x5b39d66ab80e1ea8!8m2!3d-43.533375!4d172.6049419" target="_blank"><span class="icon icon-map-marker"></span><span class="text">{{$info->address}}</span></a></li>
+                  <li><a href="tel://1234567920"><span class="icon icon-phone"></span><span class="text">{{$info->contact}}</span></a></li>
+                  <li><a href="mailto:{{$info->email}} "><span class="icon icon-envelope"></span><span class="text">{{$info->email}} </span></a></li>
                 </ul>
+
+                @endforeach
+
               </div>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
              

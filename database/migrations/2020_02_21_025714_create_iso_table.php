@@ -16,9 +16,11 @@ class CreateIsoTable extends Migration
         Schema::create('iso', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('title1');
-            $table->string('title2');
-            $table->text('desc');
+            $table->text('iso_9001');
+            $table->text('iso_45001');
+            $table->text('iso_14001_1');
+            $table->text('iso_14001_2');
+            $table->text('iso_14001_3');
 
             $table->timestamps();
         });

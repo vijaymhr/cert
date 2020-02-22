@@ -2,10 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Feedback;
-class FeedbackController extends Controller
+use\App\Feedback;
+
+class FeedbackAdminController extends Controller
 {
+
+
+
+    
+    // /**
+    //  * Create a new controller instance.
+    //  *
+    //  * @return void
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware('auth', ['except'=>[ 'show']]);
+    // }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +29,8 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        return view ('/.#contact-section');
+        $feedbacks= Feedback::orderBy('created_at','desc')-> paginate(10);
+        return view('admin/pages.feedback')->with('feedbacks',$feedbacks);
 
     }
 
@@ -35,30 +52,7 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,
-        [
-            'fname'=>'required',
-            'email'=>'required | email',
-            'mobile'=>'required',
-            'subject'=>'required',
-            'message'=>'required',
-            
-        ]);
-
-        $feedback=new Feedback;
-        $feedback->fname=$request->input('fname');
-        $feedback->email=$request->input('email');
-        $feedback->mobile=$request->input('mobile');
-        $feedback->subject=$request->input('subject');
-
-        $feedback->message=$request->input('message');
-// $feedback->user_id='1';
-        $feedback->save();
-
-
-        
-      return redirect('/.#contact-section')->with('success', 'Thank you for your feedback.');
-
+        //
     }
 
     /**
@@ -69,7 +63,7 @@ class FeedbackController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**

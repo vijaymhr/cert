@@ -27,70 +27,108 @@
                             
                     <div class="body">
 
-                            {!! Form::open(['action' => ['IsoController@update', $iso->id], 'method'=> 'POST', 'enctype'=>'multipart/form-data']) !!}
-                            <div class="row clearfix">
-                                    <div class="col-sm-4">
-                    <div class="form-group">
-
-                        <div class="form-line">
-                            
-                            {{Form::label('title1', 'ISO Type')}}
-                            {{Form::text('title1',$iso->title1,['class'=>'form-control', 'placeholder'=>'ISO 9001'])}}
-
-                        </div>
-                    </div>
-                                    </div>
-
-
-                                    <div class="col-sm-4">
-                                            <div class="form-group">
-                        
-                                                <div class="form-line">
-                                                    
-                                                    {{Form::label('title2', 'ISO Title')}}
-                                                    {{Form::text('title2',$iso->title2,['class'=>'form-control', 'placeholder'=>'ISO Title'])}}
-                        
-                                                </div>
-                                            </div>
-                                                            </div>
-
-
-
-                                                            
-
-                            </div><!--clearfix close div for col-sm-4-->
-
-                            <div class="form-group">
-                        
+                        {!! Form::open(['action' => ['IsoController@update', $iso->id], 'method'=> 'POST', 'enctype'=>'multipart/form-data']) !!}
+                        <div class="row clearfix">
+                            <div class="col-sm">
+                                <div class="form-group">
+                
                                     <div class="form-line">
                                         
-                                        {{Form::label('desc', 'ISO Description')}}
-                                        {{Form::textarea('desc',$iso->desc,['class'=>'form-control', 'placeholder'=>'ISO Description'])}}
-            
+                                        {{Form::label('iso_9001', 'ISO 9001')}}
+                                        {{Form::textarea('iso_9001',$iso->iso_9001,['class'=>'form-control', 'placeholder'=>'ISO 9001'])}}
+                
+                
+                                        <script>
+                                            CKEDITOR.replace( 'iso_9001' );
+                                    </script>
                                     </div>
-
-                                    <script>
-                                        CKEDITOR.replace( 'desc' );
-                                </script>
                                 </div>
+                                                </div>
+
+                                                <div class="col-sm">
+                                                    <div class="form-group">
+                                    
+                                                        <div class="form-line">
+                                                            
+                                                            {{Form::label('iso_45001', 'ISO 45001')}}
+                                                            {{Form::textarea('iso_45001',$iso->iso_45001,['class'=>'form-control', 'placeholder'=>'ISO 45001'])}}
+                                    
+                                    
+                                                            <script>
+                                                                CKEDITOR.replace( 'iso_45001' );
+                                                        </script>
+                                                        </div>
+                                                    </div>
+                                                                    </div>
+
+                                                
+
+                                
+                                                        </div>
+
+                                                        <div class="col-sm">
+                                                            <div class="form-group">
+                                        
+                                                                <div class="form-line">
+                                                                    
+                                                                    {{Form::label('iso_14001_1', ' ISO 14001 EM')}}
+                                                                    {{Form::textarea('iso_14001_1',$iso->iso_14001_1,['class'=>'form-control', 'placeholder'=>'ISO 14001 EM', ])}}
+                                                                    <script>
+                                                                        CKEDITOR.replace( 'iso_14001_1' );
+                                                                </script>
+                                                                </div>
+                                                            </div>
+                                                                            </div>
+
+                                                                      <div class="col-sm">
+                                                                                <div class="form-group">
+                                                            
+                                                                                    <div class="form-line">
+                                                                                        
+                                                                                        {{Form::label('iso_14001_2', ' ISO 14001 BCP')}}
+                                                                                        {{Form::textarea('iso_14001_2',$iso->iso_14001_2,['class'=>'form-control', 'placeholder'=>'ISO 14001 BCP', ])}}
+                                                                                        <script>
+                                                                                            CKEDITOR.replace( 'iso_14001_2' );
+                                                                                    </script>
+                                                                                    </div>
+                                                                                </div>                    
+                                                                                </div>
 
 
-                                {{-- <div class="form-group">
+                                                                                <div class="col-sm">
+                                                                                    <div class="form-group">
+                                                                
+                                                                                        <div class="form-line">
+                                                                                            
+                                                                                            {{Form::label('iso_14001_3', ' ISO 14001 IRM')}}
+                                                                                            {{Form::textarea('iso_14001_3',$iso->iso_14001_3,['class'=>'form-control', 'placeholder'=>'ISO 14001 IRM', ])}}
+                                                                                            <script>
+                                                                                                CKEDITOR.replace( 'iso_14001_3' );
+                                                                                        </script>
+                                                                                        </div>
+                                                                                    </div>                    
+                                                                                    </div>
 
-                                    {{Form::label('cover_image', 'Cover Image')}}
+                                   
+                            {{Form::hidden('_method', 'PUT')}}
+                            {{Form::button('<i class="material-icons">save</i> <span>Update Data</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
 
-                                    {{Form::file(('cover_image'))}}
-                                </div> --}}
-
-
-                                {{Form::hidden('_method', 'PUT')}}
-                                {{Form::button('<i class="material-icons">save</i> <span>Update Food</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
-
-                        {!! Form::close() !!}
+                    {!! Form::close() !!}
+                        </div><!--clearfix close div for col-sm-4-->
 
 
+                            {{-- <div class="form-group">
 
-                    </div>
+                                {{Form::label('aboutImage', 'About Us Cover Image')}}
+
+                                {{Form::file(('aboutImage'))}}
+                            </div> --}}
+
+
+
+
+
+                </div>
                       
                 </div>
             </div>
