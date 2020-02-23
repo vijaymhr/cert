@@ -28,6 +28,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $abouts= About::all();
+        $infos=Info::all();
+        $isos=Iso::all();
+        return view('pages.index')->with ('abouts',$abouts)->with('infos', $infos)->with('isos', $isos);
     }
 }
