@@ -4,17 +4,17 @@
         <!-- User Info -->
         <div class="user-info">
             <div class="image">
-            <img src="{{asset('storage/aboutUs/user.jpg')}}" width="48" height="48" alt="User" />
+            <img src="{{asset('storage/img/user.jpeg')}}" width="48" height="48" alt="User" />
             </div>
             <div class="info-container">
                 <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                    {{-- {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}} --}}
+                    {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
 
                 </div>
                 <div class="email">
 
-                    {{-- {{{ isset(Auth::user()->name) ? Auth::user()->email : Auth::user()->name }}} --}}
+                    {{{ isset(Auth::user()->name) ? Auth::user()->email : Auth::user()->name }}}
 
                 </div>
                 <div class="btn-group user-helper-dropdown">
@@ -27,7 +27,7 @@
                         {{-- logout --}}
 
 
-                        {{-- <li>
+                       <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
@@ -38,7 +38,7 @@
                                 @csrf
                             </form>
                             {{-- <a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a> --}}
-                        </li> --}}
+                        </li>
                     </ul>
                 </div>
             </div>

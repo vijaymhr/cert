@@ -17,7 +17,7 @@
 
 
                         <h2>
-                           ISO Details
+                           ISO Standards
                         </h2>
                         <ul class="header-dropdown m-r--5">
                                

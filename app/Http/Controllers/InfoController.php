@@ -1,11 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Info;
 class InfoController extends Controller
 {
+
+
+/**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>[ 'show']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *

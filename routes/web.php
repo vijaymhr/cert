@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@index') ;
 
+
 Route::resource('dashboard', 'AdminController');
 Route::resource('about', 'AboutController');
 Route::resource('iso', 'IsoController');
@@ -23,3 +24,7 @@ Route::resource('feedback', 'FeedbackAdminController');
 
 
 Route::get('/contact', 'PagesController@contact');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

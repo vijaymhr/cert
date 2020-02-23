@@ -7,12 +7,47 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="#practice-section" class="nav-link"><span>ISO Standards
+          <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="/#practice-section" class="nav-link"><span>ISO Standards
         </span></a></li>
-          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-          <li class="nav-item cta"><a href="#contact-form" class="nav-link"data-target="#modalAppointment">Contact Us</a></li>
+          <li class="nav-item"><a href="/#contact-section" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item cta"><a href="/#contact-form" class="nav-link"data-target="#modalAppointment">Contact Us</a></li>
+        
+
+         <!-- Authentication Links -->
+         @guest
+         <li class="nav-item">
+             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+         </li>
+         @if (Route::has('register'))
+             <li class="nav-item">
+                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+             </li>
+         @endif
+     @else
+         <li class="nav-item dropdown">
+             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                 {{ Auth::user()->name }} <span class="caret"></span>
+             </a>
+
+             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="/about">Admin</a>
+
+                 <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                     {{ __('Logout') }}
+                 </a>
+
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                     @csrf
+                 </form>
+             </div>
+         </li>
+     @endguest
+
+        
         </ul>
       </div>
     </div>

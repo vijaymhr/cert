@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\Feedback;
 class FeedbackController extends Controller
 {
+
+
+
+
     /**
      * Display a listing of the resource.
      *
