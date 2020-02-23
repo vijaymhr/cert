@@ -4,7 +4,7 @@
 
 
 
-<section class="hero-wrap js-fullheight" style="background-image: url('storage/img/cover.jpeg');" data-section="home">
+<section class="hero-wrap js-fullheight" style="background-image: url('images/img/cover.jpeg');" data-section="home">
     <div class="overlay"></div>
     <div class="container">
 
@@ -41,7 +41,7 @@
         <div class="row d-flex">
             <div class="col-md-6 col-lg-6 d-flex order-md-last">
                 <div class="img-about img d-flex align-items-stretch">
-                    <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(storage/img/author.jpeg);">
+                    <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/img/author.jpeg);">
                         
                     </div>
                 </div>
@@ -77,7 +77,7 @@
         <div class="row d-flex">
             <div class="col-md-6 col-lg-6 d-flex">
                 <div class="img-about img d-flex align-items-stretch">
-                    <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/);">
+                    <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/img/client.jpg);">
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="storage/img/9001.jpg" class="imgcenter">
+        <img src="images/img/9001.jpg" class="imgcenter">
        @foreach ($isos as $iso)
            {!!$iso->iso_9001!!}
        @endforeach
@@ -198,7 +198,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="storage/img/45001.jpg" class="imgcenter">
+        <img src="images/img/45001.jpg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_45001!!}
@@ -229,7 +229,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="storage/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001_em.jpg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_1!!}
@@ -263,7 +263,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="storage/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001_em.jpg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_2!!}
@@ -294,7 +294,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="storage/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001_em.jpg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_3!!}

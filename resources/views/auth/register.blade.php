@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="hero-wrap js-fullheight" style="background-image: url('storage/img/admin2.jpg');" data-section="home">
+<section class="hero-wrap js-fullheight" style="background-image: url('images/img/admin2.jpg');" data-section="home">
     <div class="overlay"></div>
     <div class="row justify-content-center">
         <div class="col-md">
