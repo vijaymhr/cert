@@ -166,7 +166,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="images/img/9001.jpg" class="imgcenter">
+        {{-- iso images --}}
+        <img src="images/img/9001.jpg" class="imgcenter"> 
        @foreach ($isos as $iso)
            {!!$iso->iso_9001!!}
        @endforeach
