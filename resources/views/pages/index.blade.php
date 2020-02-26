@@ -41,6 +41,7 @@
         <div class="row d-flex">
             <div class="col-md-6 col-lg-6 d-flex order-md-last">
                 <div class="img-about img d-flex align-items-stretch">
+                  
                     <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/img/author.jpeg);">
                         
                     </div>
@@ -75,11 +76,13 @@
 <section class="ftco-about ftco-no-pt ftco-no-pb img ftco-section bg-light">
     <div class="container">
         <div class="row d-flex">
-            <div class="col-md-6 col-lg-6 d-flex">
+            <div class="col-md-6 col-lg-6 d-flex"  style="width: 100%;height: auto;  ">
                 <div class="img-about img d-flex align-items-stretch">
-                    <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/img/client.jpg);">
+
+                  <img src="images/img/client.png" class="img d-flex align-self-stretch align-items-end">
+                    {{-- <div class="img d-flex align-self-stretch align-items-end" style="background-image:url(images/img/client.png); object-fit: cover;">
+                    </div> --}}
                     </div>
-                </div>
             </div>
             <div class="col-md-6 col-lg-6 pl-lg-5 py-5" style="text-align: justify">
                 <div class="row justify-content-start pb-3">
@@ -167,7 +170,7 @@
       </div>
       <div class="modal-body">
         {{-- iso images --}}
-        <img src="images/img/9001.jpg" class="imgcenter"> 
+        <img src="images/img/9001.jpeg" class="imgcenter"> 
        @foreach ($isos as $iso)
            {!!$iso->iso_9001!!}
        @endforeach
@@ -199,7 +202,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="images/img/45001.jpg" class="imgcenter">
+        <img src="images/img/45001.jpeg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_45001!!}
@@ -230,7 +233,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="images/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001.jpeg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_1!!}
@@ -264,7 +267,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="images/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001_bcp.jpeg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_2!!}
@@ -295,7 +298,7 @@
          </button>
        </div>
        <div class="modal-body">
-        <img src="images/img/14001_em.jpg" class="imgcenter">
+        <img src="images/img/14001_irm.jpeg" class="imgcenter">
 
         @foreach ($isos as $iso)
             {!!$iso->iso_14001_3!!}
@@ -445,7 +448,7 @@
           <ul class="list-unstyled">
             <li><a href="/"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
             <li><a href="/#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-            <li><a href="/#practice-section"><span class="icon-long-arrow-right mr-2"></span>ISO standarts</a></li>
+            <li><a href="/#practice-section"><span class="icon-long-arrow-right mr-2"></span>Systems Implemetation</a></li>
             <li><a href="/#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
           </ul>
         </div>
@@ -454,11 +457,15 @@
          <div class="ftco-footer-widget mb-4">
           <h2 class="ftco-heading-2">Practice Areas</h2>
           <ul class="list-unstyled">
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter1"><span class="icon-long-arrow-right mr-2"></span>ISO 9001</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter2"><span class="icon-long-arrow-right mr-2"></span>ISO 14001</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter3"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-EM</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter4"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-BCP</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter5"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-IRM</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter1"><span class="icon-long-arrow-right mr-2"></span>Quality Assurance Management (QAM)</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter2"><span class="icon-long-arrow-right mr-2"></span>Occupational Health & Safety Management
+            </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter3"><span class="icon-long-arrow-right mr-2"></span>Environmental Management
+            </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter4"><span class="icon-long-arrow-right mr-2"></span>Business Continuity Planning (BCP)
+            </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter5"><span class="icon-long-arrow-right mr-2"></span>Insurance Risk Management
+            </a></li>
 
       
           </ul>
@@ -490,7 +497,7 @@
       <div class="col-md-12 text-center">
 
         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Jeremy Haselden 
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved Jeremy Haselden | Designed and Developed by Vijay Maharjan | Sushan Kiran Pradhan | Andrii Krysko
       </div>
     </div>
   </div>

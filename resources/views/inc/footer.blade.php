@@ -13,7 +13,8 @@
             <ul class="list-unstyled">
               <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
               <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-              <li><a href="#practice-section"><span class="icon-long-arrow-right mr-2"></span>ISO standarts</a></li>
+              <li><a href="#practice-section"><span class="icon-long-arrow-right mr-2"></span>SYSTEMS IMPLEMETATION
+</a></li>
               <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
             </ul>
           </div>
@@ -22,7 +23,8 @@
            <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Practice Areas</h2>
             <ul class="list-unstyled">
-              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter1"><span class="icon-long-arrow-right mr-2"></span>ISO 9001</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter1"><span class="icon-long-arrow-right mr-2"></span>Quality Assurance Management (QAM)
+              </a></li>
               <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter2"><span class="icon-long-arrow-right mr-2"></span>ISO 14001</a></li>
               <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter3"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-EM</a></li>
               <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter4"><span class="icon-long-arrow-right mr-2"></span>ISO 45001-BCP</a></li>
