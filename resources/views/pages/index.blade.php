@@ -10,20 +10,20 @@
 
       <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
         <div class="col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> OPERATIONAL QUALITY =</h1>
-          <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">SENIOR MANAGEMENT  BEST  PRACTICE, 
+          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Operational Quality </h1>
+          <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> = Seniour Managment Best Practice 
             <br>
-            WORKPLACE SAFETY
-            <br>
-
-            MEASURABLE  RISK MANAGEMENT
+            = Workplace Safety
             <br>
 
-
-            PRODUCTIVE GROWTH  
+            = Measurable Risk Managment 
             <br>
 
-            ENVIRONMENT EXPEDIENCY
+
+            = Productive Growth   
+            <br>
+
+            = Environmental Expidiency
 
           </p>
           <p><a href="#contact-form" class="btn btn-primary py-3 px-4"  data-target="#modalAppointment">Contact Us</a></p>
@@ -146,12 +146,12 @@
     
   
 
-    <h2 class="mb-4" style="text-align: center; font-weight: 600;text-transform: uppercase;">ISO Standards</h2>
+    <h2 class="mb-4" style="text-align: center; font-weight: 600;text-transform: uppercase;">Systems Implemetation</h2>
 
       <div class="row justify-content-center mb-6">
           <!-- Button trigger modal -->
 
- <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter1">ISO 9001</a></p>
+ <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter1">Quality Assurance Management</a></p>
 
 
 <!-- Modal -->
@@ -159,7 +159,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">ISO 9001 
+        <h5 class="modal-title" id="exampleModalLongTitle"> 
           <br>	Quality Assurance Management (QAM)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -182,7 +182,7 @@
 
 
  <!-- Button trigger modal -->
- <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter2">ISO 45001</a></p>
+ <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter2">Occupational Health & Safety Management</a></p>
 
 
  
@@ -191,7 +191,7 @@
    <div class="modal-dialog modal-dialog-centered" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ISO 45001
+         <h5 class="modal-title" id="exampleModalLongTitle">
           <br>Occupational Health & Safety Management
          </h5>
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -213,7 +213,7 @@
  </div>
  
  <!-- Button trigger modal -->
- <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter3">ISO 14001 - EM</a></p>
+ <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter3">Environmental Management</a></p>
 
 
  
@@ -222,7 +222,7 @@
    <div class="modal-dialog modal-dialog-centered" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ISO 14001
+         <h5 class="modal-title" id="exampleModalLongTitle">
            <br>Environmental Management
          </h5>
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -247,7 +247,7 @@
  
  <!-- Button trigger modal -->
 
- <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter4">ISO 14001 - BCP</a></p>
+ <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter4">Business Continuity Planning</a></p>
 
 
  
@@ -256,7 +256,7 @@
    <div class="modal-dialog modal-dialog-centered" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ISO 14001
+         <h5 class="modal-title" id="exampleModalLongTitle">
            <br>Business Continuity Planning (BCP) 
          </h5>
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -279,7 +279,7 @@
 
 
 <!-- Button trigger modal -->
-<p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter5">ISO 14001 - IRM</a></p>
+<p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter5">Insurance Risk Management</a></p>
 
  
  <!-- Modal -->
@@ -287,7 +287,7 @@
    <div class="modal-dialog modal-dialog-centered" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ISO 14001
+         <h5 class="modal-title" id="exampleModalLongTitle">
            <br>Insurance Risk Management 
          </h5>
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -332,7 +332,7 @@
       <div class="col-md-10 heading-section text-center ftco-animate">
         @include('inc.messages')
 
-        <h2 class="mb-4">LETS TALK ABOUT THIS</h2>
+        <h2 class="mb-4">LETS TALK </h2>
         <p><a href="#contact-form" class="btn btn-primary py-3 px-4" data-target="#modalAppointment">Contact Us</a></p>
       </div>
     </div>

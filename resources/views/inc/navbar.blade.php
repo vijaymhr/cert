@@ -9,9 +9,8 @@
         <ul class="navbar-nav nav ml-auto">
           <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
           <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="/#practice-section" class="nav-link"><span>ISO Standards
+          <li class="nav-item"><a href="/#practice-section" class="nav-link"><span>Systems Implementation
         </span></a></li>
-          <li class="nav-item"><a href="/#contact-section" class="nav-link"><span>Contact</span></a></li>
           <li class="nav-item cta"><a href="/#contact-form" class="nav-link"data-target="#modalAppointment">Contact Us</a></li>
         
 
